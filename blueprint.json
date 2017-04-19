@@ -15,7 +15,7 @@
         "level": "beta",
         "patch": 0
       },
-      "timestamp": "2017-04-19 23:47:08 UTC"
+      "timestamp": null
     },
     "software": {
       "display": {
@@ -92,7 +92,31 @@
 
     ],
     "environment_variables": [
-
+      {
+        "name": "X11COMMAND",
+        "value": "libreoffice",
+        "mandatory": false,
+        "ask_at_build_time": true,
+        "build_time_only": false,
+        "immutable": true,
+        "input": {
+          "label": "",
+          "type": "string",
+          "title": "",
+          "comment": "",
+          "hint": "",
+          "placeholder": "",
+          "collection": {
+            "items": {
+            },
+            "include_blank": false
+          },
+          "validation": {
+            "pattern": "",
+            "message": ""
+          }
+        }
+      }
     ],
     "template_files": [
 
