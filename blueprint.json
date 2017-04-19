@@ -11,11 +11,11 @@
     "blueprint": {
       "version": {
         "major": 0,
-        "minor": 0,
+        "minor": 1,
         "level": "alpha",
         "patch": 0
       },
-      "timestamp": null
+      "timestamp": "2017-04-19 23:43:30 UTC"
     },
     "software": {
       "display": {
@@ -50,8 +50,8 @@
     },
     "ports": [
       {
-        "port": "222",
-        "external": "2224",
+        "port": 222,
+        "external": 2224,
         "protocol": "tcp"
       }
     ],
