@@ -1,0 +1,145 @@
+{
+  "schema": {
+    "type": "app_blueprint",
+    "version": {
+      "major": 1,
+      "minor": 0
+    },
+    "origin": "Engines Developer Studio 0.2"
+  },
+  "metadata": {
+    "blueprint": {
+      "version": {
+        "major": 0,
+        "minor": 0,
+        "level": "alpha",
+        "patch": 0
+      },
+      "timestamp": null
+    },
+    "software": {
+      "display": {
+        "title": "Libre Office",
+        "label": "libreoffice",
+        "version": "",
+        "description": "",
+        "url": ""
+      },
+      "license": {
+        "label": "",
+        "url": ""
+      }
+    }
+  },
+  "software": {
+    "base": {
+      "name": "libreoffice",
+      "framework": "x11",
+      "memory": {
+        "required": "384",
+        "recommended": "768"
+      },
+      "http_protocol": "http_only",
+      "framework_port_override": "",
+      "deployment_type": "worker",
+      "web_root_directory": "",
+      "continuous_deployment": false,
+      "install_form_comment": "",
+      "first_run_url": "",
+      "installation_report": ""
+    },
+    "ports": [
+
+    ],
+    "scripts": {
+      "start": {
+        "language": "sh",
+        "content": ""
+      },
+      "install": {
+        "language": "sh",
+        "content": ""
+      },
+      "post_install": {
+        "language": "sh",
+        "content": ""
+      },
+      "shutdown": {
+        "language": "sh",
+        "content": ""
+      }
+    },
+    "external_repositories": [
+
+    ],
+    "system_packages": [
+      {
+        "package": "libreoffice",
+        "version": ""
+      }
+    ],
+    "installed_packages": [
+
+    ],
+    "required_modules": [
+
+    ],
+    "service_configurations": [
+
+    ],
+    "environment_variables": [
+
+    ],
+    "template_files": [
+
+    ],
+    "replacement_strings": [
+
+    ],
+    "database_seed": {
+      "language": "text",
+      "content": "",
+      "script": false
+    },
+    "file_write_permissions": [
+
+    ],
+    "persistent_directories": [
+
+    ],
+    "persistent_files": [
+
+    ],
+    "components": {
+      "path": "",
+      "extract": false,
+      "sources": [
+
+      ]
+    },
+    "workers": {
+      "blocking": "",
+      "commands": [
+
+      ]
+    },
+    "rake_tasks": [
+
+    ],
+    "custom_php_inis": [
+
+    ],
+    "apache_htaccess_files": [
+
+    ],
+    "apache_httpd_configurations": [
+
+    ],
+    "actionators": [
+
+    ],
+    "schedules": [
+
+    ]
+  }
+}
