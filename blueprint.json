@@ -36,8 +36,8 @@
       "name": "libreoffice",
       "framework": "x11",
       "memory": {
-        "required": "384",
-        "recommended": "768"
+        "required": 384,
+        "recommended": 768
       },
       "http_protocol": "http_only",
       "framework_port_override": "",
@@ -49,7 +49,11 @@
       "installation_report": ""
     },
     "ports": [
-
+      {
+        "port": "222",
+        "external": "2224",
+        "protocol": "tcp"
+      }
     ],
     "scripts": {
       "start": {
