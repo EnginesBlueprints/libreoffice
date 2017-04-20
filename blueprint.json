@@ -175,7 +175,42 @@
 
     ],
     "actionators": [
-
+      {
+        "name": "single_access_key",
+        "label": "Create single Access Key",
+        "description": "",
+        "return_type": "plain_text",
+        "return_file_name": "",
+        "enable_logging": false,
+        "script": {
+          "language": "sh",
+          "content": "#!/bin/bash\r\nif test -z $overwrite_existing\r\n then\r\n  overwrite_existing=true\r\n fi\r\n if test $overwrite_existing == true\r\n  then\r\n    rm /home/app/.ssh/single_access /home/app/.ssh/single_access.pub /home/app/.ssh/authorized_keys\r\n  fi\r\n  \r\n  if ! test -f  /home/app/.ssh/single_access\r\n   then\r\n    ssh-keygen -q -N \"\" -f /home/app/.ssh/single_access\r\n    cp /home/app/.ssh/single_access.pub  /home/app/.ssh/authorized_keys\r\n# Option to remove?\r\n   fi\r\ncat /home/app/.ssh/single_access"
+        },
+        "variables": [
+          {
+            "name": "overwrite_existing",
+            "value": "false",
+            "mandatory": false,
+            "input": {
+              "label": "",
+              "type": "boolean",
+              "title": "",
+              "comment": "",
+              "hint": "",
+              "placeholder": "",
+              "collection": {
+                "items": {
+                },
+                "include_blank": false
+              },
+              "validation": {
+                "pattern": "",
+                "message": ""
+              }
+            }
+          }
+        ]
+      }
     ],
     "schedules": [
 
