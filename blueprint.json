@@ -89,31 +89,42 @@
 
     ],
     "service_configurations": [
-
+      {
+        "publisher_namespace": "EnginesSystem",
+        "type_path": "filesystem/local/filesystem",
+        "variables": {
+          "service_name": "_Engines_Builder(engine_name)",
+          "volume_src": "",
+          "engine_path": " /home/app",
+          "permissions": "rw",
+          "user": "_Engines_Builder(data_uid)",
+          "group": "_Engines_Builder(data_gid)"
+        }
+      }
     ],
     "environment_variables": [
       {
         "name": "X11COMMAND",
         "value": "libreoffice",
         "mandatory": false,
-        "ask_at_build_time": true,
-        "build_time_only": false,
         "immutable": true,
+        "ask_at_build_time": false,
+        "build_time_only": false,
         "input": {
-          "label": "",
           "type": "string",
+          "label": "",
           "title": "",
           "comment": "",
           "hint": "",
           "placeholder": "",
-          "collection": {
-            "items": {
-            },
-            "include_blank": false
-          },
           "validation": {
             "pattern": "",
             "message": ""
+          },
+          "collection": {
+            "include_blank": false,
+            "items": {
+            }
           }
         }
       }
